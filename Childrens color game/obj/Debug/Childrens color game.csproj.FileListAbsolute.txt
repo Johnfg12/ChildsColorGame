@@ -1,0 +1,15 @@
+\\fil-file-001.sgscol.ac.uk\fil-stu-data$\sgs376414\my documents\visual studio 2013\Projects\Childrens color game\Childrens color game\bin\Debug\Childrens color game.exe.config
+\\fil-file-001.sgscol.ac.uk\fil-stu-data$\sgs376414\my documents\visual studio 2013\Projects\Childrens color game\Childrens color game\bin\Debug\Childrens color game.exe
+\\fil-file-001.sgscol.ac.uk\fil-stu-data$\sgs376414\my documents\visual studio 2013\Projects\Childrens color game\Childrens color game\bin\Debug\Childrens color game.pdb
+\\fil-file-001.sgscol.ac.uk\fil-stu-data$\sgs376414\my documents\visual studio 2013\Projects\Childrens color game\Childrens color game\obj\Debug\Childrens color game.csprojResolveAssemblyReference.cache
+\\fil-file-001.sgscol.ac.uk\fil-stu-data$\sgs376414\my documents\visual studio 2013\Projects\Childrens color game\Childrens color game\obj\Debug\MainWindow.baml
+\\fil-file-001.sgscol.ac.uk\fil-stu-data$\sgs376414\my documents\visual studio 2013\Projects\Childrens color game\Childrens color game\obj\Debug\MainWindow.g.cs
+\\fil-file-001.sgscol.ac.uk\fil-stu-data$\sgs376414\my documents\visual studio 2013\Projects\Childrens color game\Childrens color game\obj\Debug\App.g.cs
+\\fil-file-001.sgscol.ac.uk\fil-stu-data$\sgs376414\my documents\visual studio 2013\Projects\Childrens color game\Childrens color game\obj\Debug\Childrens color game_MarkupCompile.cache
+\\fil-file-001.sgscol.ac.uk\fil-stu-data$\sgs376414\my documents\visual studio 2013\Projects\Childrens color game\Childrens color game\obj\Debug\Childrens color game.g.resources
+\\fil-file-001.sgscol.ac.uk\fil-stu-data$\sgs376414\my documents\visual studio 2013\Projects\Childrens color game\Childrens color game\obj\Debug\Childrens_color_game.Properties.Resources.resources
+\\fil-file-001.sgscol.ac.uk\fil-stu-data$\sgs376414\my documents\visual studio 2013\Projects\Childrens color game\Childrens color game\obj\Debug\Childrens color game.csproj.GenerateResource.Cache
+\\fil-file-001.sgscol.ac.uk\fil-stu-data$\sgs376414\my documents\visual studio 2013\Projects\Childrens color game\Childrens color game\obj\Debug\Childrens color game.exe
+\\fil-file-001.sgscol.ac.uk\fil-stu-data$\sgs376414\my documents\visual studio 2013\Projects\Childrens color game\Childrens color game\obj\Debug\Childrens color game.pdb
+\\fil-file-001.sgscol.ac.uk\fil-stu-data$\sgs376414\my documents\visual studio 2013\Projects\Childrens color game\Childrens color game\obj\Debug\ColorGameMain.baml
+\\fil-file-001.sgscol.ac.uk\fil-stu-data$\sgs376414\my documents\visual studio 2013\Projects\Childrens color game\Childrens color game\obj\Debug\ColorGameMain.g.cs
