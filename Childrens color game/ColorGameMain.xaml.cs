@@ -23,21 +23,20 @@ namespace Childrens_color_game
         public ColorGameMain()
         {
             InitializeComponent();
-            ColorUtilites colorUtilites = new ColorUtilites();
-            Rectangle_0.Fill = new SolidColorBrush(colorUtilites.GetRandomColor());
-            Rectangle_1.Fill = new SolidColorBrush(colorUtilites.GetRandomColor());
-            Rectangle_2.Fill = new SolidColorBrush(colorUtilites.GetRandomColor());
-            Rectangle_3.Fill = new SolidColorBrush(colorUtilites.GetRandomColor());
-            Rectangle_4.Fill = new SolidColorBrush(colorUtilites.GetRandomColor());
-            Rectangle_5.Fill = new SolidColorBrush(colorUtilites.GetRandomColor());
+            Rectangle_0.Fill = new SolidColorBrush(ColorUtilites.getRandomColor());
+            Rectangle_1.Fill = new SolidColorBrush(ColorUtilites.getRandomColor());
+            Rectangle_2.Fill = new SolidColorBrush(ColorUtilites.getRandomColor());
+            Rectangle_3.Fill = new SolidColorBrush(ColorUtilites.getRandomColor());
+            Rectangle_4.Fill = new SolidColorBrush(ColorUtilites.getRandomColor());
+            Rectangle_5.Fill = new SolidColorBrush(ColorUtilites.getRandomColor());
 
-            if (colorUtilites.GetColorName(colorUtilites.GetRandomColor()) == null)
+            if (ColorUtilites.getNameFromColor(ColorUtilites.getRandomColor()) == "NULL")
             {
                 Debug.WriteLine("it was null");
             }
             else
             {
-                Debug.WriteLine(colorUtilites.GetColorName(colorUtilites.GetRandomColor()));
+                Debug.WriteLine(ColorUtilites.getNameFromColor(ColorUtilites.getRandomColor()));
             }
         }
     }
