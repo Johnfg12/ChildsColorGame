@@ -9,5 +9,11 @@
         <Rectangle Name="Rectangle_3" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="50" Margin="10,175,0,0" Stroke="Black" VerticalAlignment="Top" Width="50"/>
         <Rectangle Name="Rectangle_4" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="50" Margin="10,230,0,0" Stroke="Black" VerticalAlignment="Top" Width="50"/>
         <Rectangle Name="Rectangle_5" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="50" Margin="10,285,0,0" Stroke="Black" VerticalAlignment="Top" Width="50"/>
+        <TextBox Name="TextBox_0" KeyDown="TextBox_0_KeyDown" HorizontalAlignment="Left" Height="27" Margin="272,22,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="164"/>
+        <TextBox Name="TextBox_1" KeyDown="TextBox_1_KeyDown" HorizontalAlignment="Left" Height="27" Margin="272,74,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="164"/>
+        <TextBox Name="TextBox_2" KeyDown="TextBox_2_KeyDown" HorizontalAlignment="Left" Height="27" Margin="272,130,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="164"/>
+        <TextBox Name="TextBox_3" KeyDown="TextBox_3_KeyDown" HorizontalAlignment="Left" Height="27" Margin="272,185,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="164"/>
+        <TextBox Name="TextBox_4" KeyDown="TextBox_4_KeyDown" HorizontalAlignment="Left" Height="27" Margin="272,240,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="164"/>
+        <TextBox Name="TextBox_5" KeyDown="TextBox_5_KeyDown" HorizontalAlignment="Left" Height="27" Margin="272,298,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="164"/>
     </Grid>
 </Window>

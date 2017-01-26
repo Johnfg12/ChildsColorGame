@@ -39,5 +39,100 @@ namespace Childrens_color_game
                 Debug.WriteLine(ColorUtilites.getNameFromColor(ColorUtilites.getRandomColor()));
             }
         }
+
+        private void TextBox_0_KeyDown(object sender, KeyEventArgs e)
+        {
+            TextBox textBox = (TextBox)sender;
+            if (ColorUtilites.getNameFromColor((SolidColorBrush)textBox.Background))
+            {
+                Debug.Write("soo something happened");
+            }
+            else
+            {
+                Debug.Write("button one pressed");
+                textBox.Text = "hello";
+                textBox.Background = new SolidColorBrush(Color.FromRgb(255, 0, 0));
+            }
+        }
+
+        private void TextBox_1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Space)
+            {
+                TextBox textBox = (TextBox)sender;
+                if (textBox.Text == "")
+                {
+
+                }
+                else
+                {
+                    textBox.Background = new SolidColorBrush(Color.FromRgb(255, 0, 0));
+                }
+            }
+        }
+
+        private void TextBox_2_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Space)
+            {
+                TextBox textBox = (TextBox)sender;
+                if (textBox.Text == "")
+                {
+
+                }
+                else
+                {
+                    textBox.Background = new SolidColorBrush(Color.FromRgb(255, 0, 0));
+                }
+            }
+        }
+
+        private void TextBox_3_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Space)
+            {
+                TextBox textBox = (TextBox)sender;
+                if (textBox.Text == "")
+                {
+
+                }
+                else
+                {
+                    textBox.Background = new SolidColorBrush(Color.FromRgb(255, 0, 0));
+                }
+            }
+        }
+
+        private void TextBox_4_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Space)
+            {
+                TextBox textBox = (TextBox)sender;
+                if (textBox.Text == "")
+                {
+
+                }
+                else
+                {
+                    textBox.Background = new SolidColorBrush(Color.FromRgb(255, 0, 0));
+                }
+            }
+        }
+
+        private void TextBox_5_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Space)
+            {
+                TextBox textBox = (TextBox)sender;
+                if (textBox.Text == "")
+                {
+
+                }
+                else
+                {
+                    textBox.Background = new SolidColorBrush(Color.FromRgb(255, 0, 0));
+                }
+            }
+        }
     }
 }
