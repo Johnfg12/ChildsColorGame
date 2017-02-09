@@ -1,19 +1,55 @@
 ﻿<Window x:Class="Childrens_color_game.ColorGameMain"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="ColorGameMain" Height="394" Width="454">
-    <Grid>
+        Title="ColorGameMain" Height="436.667" Width="454">
+    <Window.Resources>
+        <ControlTemplate x:Key="Sun" TargetType="{x:Type Button}" >
+            <Grid>
+                <Path Name="Border" Stroke="Red" StrokeThickness="2" Stretch="Fill">
+                    <Path.Fill>
+                        <SolidColorBrush Color="Green"/>
+                    </Path.Fill>
+                    <Path.Data>
+                        <EllipseGeometry Center="70 20" RadiusX="50" RadiusY="25"></EllipseGeometry>
+                    </Path.Data>
+                </Path>
+                <Rectangle Name="FocusCue" Visibility="Hidden" Stroke="Black" StrokeThickness="1" StrokeDashArray="1 2" SnapsToDevicePixels="True" ></Rectangle>
+                <Border Margin="5,10,5,10">
+                    <ContentPresenter  Name="Content" Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" TextBlock.Foreground="White"></ContentPresenter>
+                </Border>
+            </Grid>
+            <ControlTemplate.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter TargetName="Border" Property="Fill" Value="DarkRed" />
+                </Trigger>
+                <Trigger Property="IsPressed" Value="True">
+                    <Setter TargetName="Border" Property="Fill" Value="IndianRed" />
+                    <Setter TargetName="Border" Property="Stroke" Value="DarkKhaki" />
+                </Trigger>
+                <Trigger Property="IsKeyboardFocused" Value="True">
+                    <Setter TargetName="FocusCue" Property="Visibility" Value="Visible"></Setter>
+                </Trigger>
+                <Trigger Property="IsEnabled" Value="False">
+                    <Setter TargetName="Content" Property="TextBlock.Foreground" Value="Gray"></Setter>
+                    <Setter TargetName="Border" Property="Fill" Value="MistyRose"></Setter>
+                </Trigger>
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
+    </Window.Resources>
+    <Grid Margin="0,0,0,-1">
         <Rectangle Name="Rectangle_0" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="50" Margin="10,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="50"/>
         <Rectangle Name="Rectangle_1" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="50" Margin="10,65,0,0" Stroke="Black" VerticalAlignment="Top" Width="50"/>
         <Rectangle Name="Rectangle_2" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="50" Margin="10,120,0,0" Stroke="Black" VerticalAlignment="Top" Width="50"/>
         <Rectangle Name="Rectangle_3" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="50" Margin="10,175,0,0" Stroke="Black" VerticalAlignment="Top" Width="50"/>
         <Rectangle Name="Rectangle_4" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="50" Margin="10,230,0,0" Stroke="Black" VerticalAlignment="Top" Width="50"/>
         <Rectangle Name="Rectangle_5" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="50" Margin="10,285,0,0" Stroke="Black" VerticalAlignment="Top" Width="50"/>
-        <TextBox Name="TextBox_0" KeyDown="TextBox_0_KeyDown" HorizontalAlignment="Left" Height="27" Margin="272,22,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="164"/>
-        <TextBox Name="TextBox_1" KeyDown="TextBox_1_KeyDown" HorizontalAlignment="Left" Height="27" Margin="272,74,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="164"/>
-        <TextBox Name="TextBox_2" KeyDown="TextBox_2_KeyDown" HorizontalAlignment="Left" Height="27" Margin="272,130,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="164"/>
-        <TextBox Name="TextBox_3" KeyDown="TextBox_3_KeyDown" HorizontalAlignment="Left" Height="27" Margin="272,185,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="164"/>
-        <TextBox Name="TextBox_4" KeyDown="TextBox_4_KeyDown" HorizontalAlignment="Left" Height="27" Margin="272,240,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="164"/>
-        <TextBox Name="TextBox_5" KeyDown="TextBox_5_KeyDown" HorizontalAlignment="Left" Height="27" Margin="272,298,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="164"/>
+        <TextBox Name="TextBox_0" KeyUp="TextBox_0_KeyUp" HorizontalAlignment="Left" Height="27" Margin="272,22,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="164"/>
+        <TextBox Name="TextBox_1" KeyUp="TextBox_1_KeyUp" HorizontalAlignment="Left" Height="27" Margin="272,74,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="164"/>
+        <TextBox Name="TextBox_2" KeyUp="TextBox_2_KeyUp" HorizontalAlignment="Left" Height="27" Margin="272,130,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="164"/>
+        <TextBox Name="TextBox_3" KeyUp="TextBox_3_KeyUp" HorizontalAlignment="Left" Height="27" Margin="272,185,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="164"/>
+        <TextBox Name="TextBox_4" KeyUp="TextBox_4_KeyUp" HorizontalAlignment="Left" Height="27" Margin="272,240,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="164"/>
+        <TextBox Name="TextBox_5" KeyUp="TextBox_5_KeyUp" HorizontalAlignment="Left" Height="27" Margin="272,298,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="164"/>
+        <Label Content="Score:" HorizontalAlignment="Left" Height="27" Margin="10,370,0,0" VerticalAlignment="Top"/>
+        <TextBlock Name="ScoreBox" HorizontalAlignment="Left" Margin="62,375,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top"/>
     </Grid>
 </Window>

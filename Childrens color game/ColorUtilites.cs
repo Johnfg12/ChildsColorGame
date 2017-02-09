@@ -7,7 +7,7 @@ namespace Childrens_color_game
     {
         private static Random random = new Random();
         private static Color[] colors = { Color.FromRgb(0, 0, 0), Color.FromRgb(255, 255, 255), Color.FromRgb(255, 0, 0), Color.FromRgb(0, 128, 0), Color.FromRgb(0, 0, 255), Color.FromRgb(255, 255, 0), Color.FromRgb(128, 128, 128), Color.FromRgb(255,0,255), Color.FromRgb(128,0,128) };
-        private static String[] colorNames = { "black", "white", "red", "green", "blue", "yellow", "gray", "pink", "purple"  };
+        private static String[] colorNames = { "black", "white", "red", "green", "blue", "yellow", "grey", "pink", "purple"  };
 
         public static Color[] getColorArray()
         {
@@ -57,16 +57,18 @@ namespace Childrens_color_game
         /// <returns>the string of the color object</returns>
         public static String getNameFromColor(Color colorRef)
         {
-            int colorLoc = 0;
+            int i = 0;
 
-            foreach(Color color in colors)
+            foreach (Color color in colors)
             {
-                if (color.Equals(colorRef))
+                if (color.R == colorRef.R &&
+                    color.G == colorRef.G &&
+                    color.B == colorRef.B)
                 {
-                    return colorNames[colorLoc];
+                    return colorNames[i];
                 }
+                i++;
             }
-
             return "NULL";
         }
 
