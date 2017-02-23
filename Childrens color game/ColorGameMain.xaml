@@ -37,19 +37,21 @@
         </ControlTemplate>
     </Window.Resources>
     <Grid Margin="0,0,0,-1">
-        <Rectangle Name="Rectangle_0" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="50" Margin="10,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="50"/>
-        <Rectangle Name="Rectangle_1" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="50" Margin="10,65,0,0" Stroke="Black" VerticalAlignment="Top" Width="50"/>
-        <Rectangle Name="Rectangle_2" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="50" Margin="10,120,0,0" Stroke="Black" VerticalAlignment="Top" Width="50"/>
-        <Rectangle Name="Rectangle_3" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="50" Margin="10,175,0,0" Stroke="Black" VerticalAlignment="Top" Width="50"/>
-        <Rectangle Name="Rectangle_4" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="50" Margin="10,230,0,0" Stroke="Black" VerticalAlignment="Top" Width="50"/>
-        <Rectangle Name="Rectangle_5" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="50" Margin="10,285,0,0" Stroke="Black" VerticalAlignment="Top" Width="50"/>
-        <TextBox Name="TextBox_0" KeyUp="TextBox_0_KeyUp" HorizontalAlignment="Left" Height="27" Margin="272,22,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="164"/>
-        <TextBox Name="TextBox_1" KeyUp="TextBox_1_KeyUp" HorizontalAlignment="Left" Height="27" Margin="272,74,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="164"/>
-        <TextBox Name="TextBox_2" KeyUp="TextBox_2_KeyUp" HorizontalAlignment="Left" Height="27" Margin="272,130,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="164"/>
-        <TextBox Name="TextBox_3" KeyUp="TextBox_3_KeyUp" HorizontalAlignment="Left" Height="27" Margin="272,185,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="164"/>
-        <TextBox Name="TextBox_4" KeyUp="TextBox_4_KeyUp" HorizontalAlignment="Left" Height="27" Margin="272,240,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="164"/>
-        <TextBox Name="TextBox_5" KeyUp="TextBox_5_KeyUp" HorizontalAlignment="Left" Height="27" Margin="272,298,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="164"/>
-        <Label Content="Score:" HorizontalAlignment="Left" Height="27" Margin="10,370,0,0" VerticalAlignment="Top"/>
-        <TextBlock Name="ScoreBox" HorizontalAlignment="Left" Margin="62,375,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top"/>
+        <Rectangle Name="Rectangle_0" Fill="#FFF4F4F5" HorizontalAlignment="Left" Margin="10,10,0,0" Stroke="Black" Width="50" Height="50" VerticalAlignment="Top"/>
+        <Rectangle Name="Rectangle_1" Fill="#FFF4F4F5" HorizontalAlignment="Left" Margin="10,65,0,0" Stroke="Black" Width="50" Height="50" VerticalAlignment="Top"/>
+        <Rectangle Name="Rectangle_2" Fill="#FFF4F4F5" HorizontalAlignment="Left" Margin="10,120,0,0" Stroke="Black" Width="50" Height="50" VerticalAlignment="Top"/>
+        <Rectangle Name="Rectangle_3" Fill="#FFF4F4F5" HorizontalAlignment="Left" Margin="10,175,0,0" Stroke="Black" Width="50" Height="50" VerticalAlignment="Top"/>
+        <Rectangle Name="Rectangle_4" Fill="#FFF4F4F5" HorizontalAlignment="Left" Margin="10,230,0,0" Stroke="Black" Width="50" Height="50" VerticalAlignment="Top"/>
+        <Rectangle Name="Rectangle_5" Fill="#FFF4F4F5" HorizontalAlignment="Left" Margin="10,285,0,0" Stroke="Black" Width="50" Height="50" VerticalAlignment="Top"/>
+        <TextBox Name="TextBox_0" KeyUp="TextBox_0_KeyUp" Margin="272,22,10,0" TextWrapping="Wrap" Text="" Height="27" VerticalAlignment="Top"/>
+        <TextBox Name="TextBox_1" KeyUp="TextBox_1_KeyUp" Margin="272,74,10,0" TextWrapping="Wrap" Text="" Height="27" VerticalAlignment="Top"/>
+        <TextBox Name="TextBox_2" KeyUp="TextBox_2_KeyUp" Margin="272,130,10,0" TextWrapping="Wrap" Text="" Height="27" VerticalAlignment="Top"/>
+        <TextBox Name="TextBox_3" KeyUp="TextBox_3_KeyUp" Margin="272,185,10,0" TextWrapping="Wrap" Text="" Height="27" VerticalAlignment="Top"/>
+        <TextBox Name="TextBox_4" KeyUp="TextBox_4_KeyUp" Margin="272,240,10,0" TextWrapping="Wrap" Text="" Height="27" VerticalAlignment="Top"/>
+        <TextBox Name="TextBox_5" KeyUp="TextBox_5_KeyUp" Margin="272,298,10,0" TextWrapping="Wrap" Text="" Height="27" VerticalAlignment="Top"/>
+        <Label Content="Score:" HorizontalAlignment="Left" Margin="10,0,0,10" Height="27" VerticalAlignment="Bottom"/>
+        <TextBlock Name="ScoreBox" HorizontalAlignment="Left" Margin="62,0,0,16" TextWrapping="Wrap" Text="0" Height="16" VerticalAlignment="Bottom"/>
+        <Image Margin="0,1,0,0" Source="cbeebies-animals.jpg" Stretch="Fill" Panel.ZIndex="-1"/>
+        <Label Content="Colors will appear on the right you &#xD;&#xA;must fill in the blank box" HorizontalAlignment="Right" Margin="0,0,10,10" Width="209" FontWeight="Bold" Foreground="Black" Background="White" Height="47" VerticalAlignment="Bottom"/>
     </Grid>
 </Window>
