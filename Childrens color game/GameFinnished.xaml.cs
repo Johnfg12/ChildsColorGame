@@ -29,6 +29,8 @@ namespace Childrens_color_game
 
         private void TextBox_KeyUp(object sender, KeyEventArgs e)
         {
+//            String sqlInsert = "";
+
             if(e.Key == Key.Enter)
             {
                 this.Close();

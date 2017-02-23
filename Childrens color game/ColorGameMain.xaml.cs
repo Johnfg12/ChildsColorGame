@@ -32,12 +32,6 @@ namespace Childrens_color_game
             Rectangle_3.Fill = new SolidColorBrush(colors[3]);
             Rectangle_4.Fill = new SolidColorBrush(colors[4]);
             Rectangle_5.Fill = new SolidColorBrush(colors[5]);
-            //Console.WriteLine(ColorUtilites.getNameFromColor(colors[0]));
-            //Console.WriteLine(ColorUtilites.getNameFromColor(colors[1]));
-            //Console.WriteLine(ColorUtilites.getNameFromColor(colors[2]));
-            //Console.WriteLine(ColorUtilites.getNameFromColor(colors[3]));
-            //Console.WriteLine(ColorUtilites.getNameFromColor(colors[4]));
-            //Console.WriteLine(ColorUtilites.getNameFromColor(colors[5]));
         }
 
         private void TextBox_0_KeyUp(object sender, KeyEventArgs e)
