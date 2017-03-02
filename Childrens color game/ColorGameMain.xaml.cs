@@ -14,6 +14,7 @@ namespace Childrens_color_game
         public static Color[] colors = { ColorUtilites.getRandomColor(), ColorUtilites.getRandomColor(), ColorUtilites.getRandomColor(), ColorUtilites.getRandomColor(), ColorUtilites.getRandomColor(), ColorUtilites.getRandomColor() };
         public static bool[] questions = { false, false, false, false, false, false };
         public static int Attempts = 0;
+
         public ColorGameMain()
         {
             InitializeComponent();

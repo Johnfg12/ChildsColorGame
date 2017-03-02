@@ -1,7 +1,7 @@
 ﻿<Window x:Class="Childrens_color_game.ColorGameMain"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="ColorGameMain" Height="436.667" Width="454">
+        Title="ColorGameMain" Height="436.667" Width="543.811">
     <Window.Resources>
         <ControlTemplate x:Key="Sun" TargetType="{x:Type Button}" >
             <Grid>

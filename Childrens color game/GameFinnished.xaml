@@ -11,6 +11,5 @@
         <TextBox HorizontalAlignment="Left" Height="23" Margin="127,63,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" KeyUp="TextBox_KeyUp"/>
         <Label Content="Your score:" HorizontalAlignment="Left" Margin="36,94,0,0" VerticalAlignment="Top"/>
         <TextBlock Name="ScoreBox" HorizontalAlignment="Left" Margin="127,103,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="17" Width="120"/>
-
     </Grid>
 </Window>
