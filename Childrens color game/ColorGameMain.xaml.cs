@@ -1,17 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
-using System.Diagnostics;
 
 namespace Childrens_color_game
 {
@@ -36,122 +27,32 @@ namespace Childrens_color_game
 
         private void TextBox_0_KeyUp(object sender, KeyEventArgs e)
         {
-            if(e.Key == Key.Enter)
-            {
-                TextBox textBox = (TextBox)sender;
-                if (textBox.Text == ColorUtilites.getNameFromColor(colors[0]))
-                {
-                    textBox.Background = new SolidColorBrush(Color.FromRgb(0, 255, 0));
-                    questions[0] = true;
-                    ScoreUpdate();
-                }
-                else
-                {
-                    textBox.Background = new SolidColorBrush(Color.FromRgb(255, 0, 0));
-                    questions[0] = false;
-                    ScoreUpdate();
-                }
-            }
+            updateTextbox(sender, e, 0);
         }
 
         private void TextBox_1_KeyUp(object sender, KeyEventArgs e)
         {
-            if (e.Key == Key.Enter)
-            {
-                TextBox textBox = (TextBox)sender;
-                if (textBox.Text == ColorUtilites.getNameFromColor(colors[1]))
-                {
-                    textBox.Background = new SolidColorBrush(Color.FromRgb(0, 255, 0));
-                    questions[1] = true;
-                    ScoreUpdate();
-                }
-                else
-                {
-                    textBox.Background = new SolidColorBrush(Color.FromRgb(255, 0, 0));
-                    questions[1] = false;
-                    ScoreUpdate();
-                }
-            }
+            updateTextbox(sender, e, 1);
         }
 
         private void TextBox_2_KeyUp(object sender, KeyEventArgs e)
         {
-            if (e.Key == Key.Enter)
-            {
-                TextBox textBox = (TextBox)sender;
-                if (textBox.Text == ColorUtilites.getNameFromColor(colors[2]))
-                {
-                    textBox.Background = new SolidColorBrush(Color.FromRgb(0, 255, 0));
-                    questions[2] = true;
-                    ScoreUpdate();
-                }
-                else
-                {
-                    textBox.Background = new SolidColorBrush(Color.FromRgb(255, 0, 0));
-                    questions[2] = false;
-                    ScoreUpdate();
-                }
-            }
+            updateTextbox(sender, e, 2);
         }
 
         private void TextBox_3_KeyUp(object sender, KeyEventArgs e)
         {
-            if (e.Key == Key.Enter)
-            {
-                TextBox textBox = (TextBox)sender;
-                if (textBox.Text == ColorUtilites.getNameFromColor(colors[3]))
-                {
-                    textBox.Background = new SolidColorBrush(Color.FromRgb(0, 255, 0));
-                    questions[3] = true;
-                    ScoreUpdate();
-                }
-                else
-                {
-                    textBox.Background = new SolidColorBrush(Color.FromRgb(255, 0, 0));
-                    questions[3] = false;
-                    ScoreUpdate();
-                }
-            }
+            updateTextbox(sender, e, 3);
         }
 
         private void TextBox_4_KeyUp(object sender, KeyEventArgs e)
         {
-            if (e.Key == Key.Enter)
-            {
-                TextBox textBox = (TextBox)sender;
-                if (textBox.Text == ColorUtilites.getNameFromColor(colors[4]))
-                {
-                    textBox.Background = new SolidColorBrush(Color.FromRgb(0, 255, 0));
-                    questions[4] = true;
-                    ScoreUpdate();
-                }
-                else
-                {
-                    textBox.Background = new SolidColorBrush(Color.FromRgb(255, 0, 0));
-                    questions[4] = false;
-                    ScoreUpdate();
-                }
-            }
+            updateTextbox(sender, e, 4);
         }
 
         private void TextBox_5_KeyUp(object sender, KeyEventArgs e)
         {
-            if (e.Key == Key.Enter)
-            {
-                TextBox textBox = (TextBox)sender;
-                if (textBox.Text == ColorUtilites.getNameFromColor(colors[5]))
-                {
-                    textBox.Background = new SolidColorBrush(Color.FromRgb(0, 255, 0));
-                    questions[5] = true;
-                    ScoreUpdate();
-                }
-                else
-                {
-                    textBox.Background = new SolidColorBrush(Color.FromRgb(255, 0, 0));
-                    questions[5] = false;
-                    ScoreUpdate();
-                }
-            }
+            updateTextbox(sender, e, 5);
         }
 
         private void ScoreUpdate()
@@ -174,6 +75,26 @@ namespace Childrens_color_game
                 gamefin.Show();
 
                 this.Close();
+            }
+        }
+
+        private void updateTextbox(Object sender, KeyEventArgs e, int question)
+        {
+            if (e.Key == Key.Enter)
+            {
+                TextBox textBox = (TextBox)sender;
+                if (textBox.Text == ColorUtilites.getNameFromColor(colors[question]))
+                {
+                    textBox.Background = new SolidColorBrush(Color.FromRgb(0, 255, 0));
+                    questions[question] = true;
+                    ScoreUpdate();
+                }
+                else
+                {
+                    textBox.Background = new SolidColorBrush(Color.FromRgb(255, 0, 0));
+                    questions[question] = false;
+                    ScoreUpdate();
+                }
             }
         }
     }
