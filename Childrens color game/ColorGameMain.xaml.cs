@@ -64,7 +64,7 @@ namespace Childrens_color_game
             {
                 if(bol == true)
                 {
-                    score++;
+                    score = score + 10;
                 }
             }
             ScoreBox.Text = score.ToString();
