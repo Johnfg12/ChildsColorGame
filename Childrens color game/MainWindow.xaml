@@ -3,8 +3,10 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        <Button Content="Play" Margin="217,0,225,28" Click="Button_Click" Height="20" VerticalAlignment="Bottom"/>
-        <TextBlock Margin="10,10,10,0" TextWrapping="Wrap" Height="256" VerticalAlignment="Top" FontStretch="UltraExpanded"><Run Text="How to play the game"/><Run Text="?"/><LineBreak/><Run/><LineBreak/><Run Text="On the next screen there will be multiple colors you will have to put the colors name in the box opposite"/></TextBlock>
-        <Image Margin="156,166,156,53" Source="CBeebies-logo.png"/>
+        <Button Content="Play" Margin="216,0,226,10" Click="Button_Click" Height="20" VerticalAlignment="Bottom" ToolTip="Starts the game"/>
+        <TextBlock Margin="10,10,10,0" TextWrapping="Wrap" Height="93" VerticalAlignment="Top" FontStretch="UltraExpanded"><Run Text="How to play the game"/><Run Text="?"/><LineBreak/><Run/><LineBreak/><Run Text="On the next screen there will be multiple colors you will have to put the colors name in the box opposite"/></TextBlock>
+        <Image Margin="154,103,158,116" Source="CBeebies-logo.png"/>
+        <Button Content="About" Margin="0,0,10,8" Click="Button_Click_1" Height="20" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="75"/>
+        <Button Content="Help" Margin="10,0,0,10" Click="Button_Click_2" Height="20" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="75"/>
     </Grid>
 </Window>

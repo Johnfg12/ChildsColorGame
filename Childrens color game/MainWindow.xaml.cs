@@ -32,5 +32,17 @@ namespace Childrens_color_game
             colorGameMain.Show();
             this.Close();
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            about about1 = new about();
+            about1.Show();
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            Help help = new Help();
+            help.Show();
+        }
     }
 }
